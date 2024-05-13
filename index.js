@@ -5,7 +5,7 @@ nav.addEventListener("mouseenter", function () {
 
   tl.to("#nav-bottom", {
     height: "21vh",
-    padding: "100px 0",
+    padding: "88px 0",
     duration: 0.5,
   });
   tl.to(".nav-part2 h5", {

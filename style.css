@@ -97,7 +97,9 @@ nav button svg {
   z-index: 9;
   border-bottom: 0.5px solid #d4d4d4;
 }
-
+nav h4:hover{
+  color: grey;
+}
 #page1 {
   width: 100%;
   height: 100vh;
@@ -260,7 +262,9 @@ nav button svg {
   position: absolute;
   scale: 0;
 }
-
+#page2 #last-right-elem{
+  /* padding-bottom: 18vh; */
+}
 
 #page3 {
   height: 100vh;
@@ -387,6 +391,49 @@ nav button svg {
   font-size: 1.5vw;
   line-height: 1.28;
 }
+#page5{
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+}
+
+.box h1{
+  font-weight: 400;
+  color: #000;
+  font-size: 4.8vw;
+  padding-top: 1vw;
+}
+.container{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 1vw 6vw;
+ flex-wrap: wrap;
+}
+.box{
+  background-color: rgb(245, 245, 245);
+  min-width: 32.4%;
+  height: 44vh;
+  padding-left: 1.5vw;
+  margin-bottom: .8vw;
+  margin-right: .8vw;
+  /* padding: 6vw 0; */
+}
+
+.box h4{
+  color: #323232;
+  font-weight: 400;
+  padding-top: .70vw;
+  font-size: .9vw;
+}
+
+.box h2{
+  color: rgb(189, 189, 189);
+  font-weight: 500;
+  padding-top: 15.6vh;
+  font-size: .9vw;
+}
+
 
 
 #page6{
@@ -394,6 +441,7 @@ nav button svg {
   width: 100%;
   background-color: #fff;
   padding: 7vw 0;
+  padding-top: 12vw;
 }
 
 #page6 p{

@@ -90,7 +90,7 @@ function page3VideoAnimation() {
   })
 
 
-  var sections = document.querySelectorAll(".sec-right")
+  var sections = document.querySelectorAll(".section-right")
 
   sections.forEach(function (elem) {
       elem.addEventListener("mouseenter", function () {

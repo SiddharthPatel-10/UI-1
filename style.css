@@ -213,6 +213,7 @@ nav h4:hover {
   align-items: center;
   border-top: 1px solid #333;
   justify-content: space-between;
+
 }
 
 #page2-left {
@@ -585,6 +586,7 @@ nav h4:hover {
   margin-bottom: 5.4vw;
 }
 
+
 #page8-right > p span {
   /* background-color: red; */
   width: 17.5vw;
@@ -788,7 +790,6 @@ summary::marker {
 }
 
 
-/* Responsive adjustments */
 @media (max-width: 1200px) {
   #page9 .container {
     justify-content: space-around;
@@ -825,7 +826,6 @@ summary::marker {
 @media (max-width: 480px) {
   #page9 .box {
     min-width: 100%;
-    /* flex: 0 1 100%; */
   }
   #page9 .box:nth-child(5) {
     min-width: 100%;

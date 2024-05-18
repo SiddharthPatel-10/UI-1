@@ -709,6 +709,7 @@ summary::marker {
   min-height: 100vh;
   width: 100%;
 }
+<<<<<<< HEAD
 /* 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -861,3 +862,13 @@ summary::marker {
   width: 100%;
 }
  */
+=======
+
+#page10 {
+  background-color: #FFF;
+  color: black;
+  min-height: 100vh;
+  width: 100%;
+}
+
+>>>>>>> parent of 7a359ac (Page9 Card Section of Industries we serve with our Expertise)

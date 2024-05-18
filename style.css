@@ -395,14 +395,20 @@ nav h4:hover {
   background-color: #fff;
 }
 
-#page5 .container {
+.box h1 {
+  font-weight: 400;
+  color: #000;
+  font-size: 4.8vw;
+  padding-top: 1vw;
+}
+.container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1vw 6vw;
   flex-wrap: wrap;
 }
-#page5 .box {
+.box {
   background-color: rgb(245, 245, 245);
   min-width: 32.4%;
   height: 44vh;
@@ -412,20 +418,14 @@ nav h4:hover {
   /* padding: 6vw 0; */
 }
 
-#page5 .box h1 {
-  font-weight: 400;
-  color: #000;
-  font-size: 4.8vw;
-  padding-top: 1vw;
-}
-#page5 .box h4 {
+.box h4 {
   color: #323232;
   font-weight: 400;
   padding-top: 0.7vw;
   font-size: 0.9vw;
 }
 
-#page5 .box h2 {
+.box h2 {
   color: rgb(189, 189, 189);
   font-weight: 500;
   padding-top: 15.6vh;
@@ -700,19 +700,17 @@ summary::marker {
 
 .product {
   padding: 3vh 0;
-  border-top: 1px solid #333;
-  /* min-height: auto; */
-}
 
+  border-top: 1px solid #333;
+}
 
 #page9 {
-  background-color: #141414;
-  color: #fff;
+  background-color: black;
   min-height: 100vh;
   width: 100%;
-  padding-bottom: 30vh;
 }
 
+<<<<<<< HEAD
 #page9 .page9-top{
   padding: 6.36vw;
   display: flex;
@@ -842,6 +840,12 @@ summary::marker {
 
 #page10, #page11, #page12{
   background-color: #fff;
+=======
+#page10 {
+  background-color: #FFF;
+  color: black;
+>>>>>>> parent of 7a359ac (Page9 Card Section of Industries we serve with our Expertise)
   min-height: 100vh;
   width: 100%;
 }
+

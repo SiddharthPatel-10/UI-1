@@ -712,6 +712,7 @@ summary::marker {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #page9 .page9-top{
   padding: 6.36vw;
   display: flex;
@@ -841,6 +842,11 @@ summary::marker {
 
 #page10, #page11, #page12{
   background-color: #fff;
+=======
+#page10 {
+  background-color: #FFF;
+  color: black;
+>>>>>>> parent of 7a359ac (Page9 Card Section of Industries we serve with our Expertise)
 =======
 #page10 {
   background-color: #FFF;

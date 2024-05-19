@@ -187,11 +187,9 @@ function page6Animations() {
 locomotiveAnimation()
 
 navAnimation()
+page2Animation() 
+page3VideoAnimation() 
 
-page2Animation()
 
-page3VideoAnimation()
 
-page6Animations()
 
-loadingAnimation()

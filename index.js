@@ -1,3 +1,4 @@
+
 function locomotiveAnimation() {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -34,78 +35,102 @@ function locomotiveAnimation() {
   ScrollTrigger.refresh();
 }
 
+function loadingAnimation() {
 
-
+  var tl = gsap.timeline()
+  tl.from("#page1", {
+      opacity: 0,
+      duration: 0.2,
+      delay: 0.2
+  })
+  tl.from("#page1", {
+      transform: "scaleX(0.7) scaleY(0.2) translateY(80%)",
+      borderRadius: "150px",
+      duration: 2,
+      ease: "expo.out"
+  })
+  tl.from("nav", {
+      opacity: 0,
+      delay: -0.2
+  })
+  tl.from("#page1 h1, #page1 p, #page1 div", {
+      opacity: 0,
+      duration: 0.5,
+      stagger: 0.2
+  })
+}
 
 function navAnimation() {
-  var nav = document.querySelector("nav");
+  var nav = document.querySelector("nav")
+
   nav.addEventListener("mouseenter", function () {
-    let tl = gsap.timeline();
+      let tl = gsap.timeline()
 
-    tl.to("#nav-bottom", {
-      height: "21vh",
-      padding: "82.5px 0",
-      duration: 0.5,
-    });
-    tl.to(".nav-part2 h5", {
-      display: "block",
-      duration: 0.1,
-    });
-    tl.to(".nav-part2 h5 span", {
-      y: 0,
-      // duration:0.3,
-      stagger: {
-        amount: 0.5,
-      },
-    });
-  });
+      tl.to("#nav-bottom", {
+          height: "24vh",
+          duration: 0.5
+      })
+      tl.to(".nav-part2 h5", {
+          display: "block",
+          duration: 0.1
+
+      })
+      tl.to(".nav-part2 h5 span", {
+          y: 0,
+          // duration:0.3,
+          stagger: {
+              amount: 0.5
+          }
+      })
+  })
   nav.addEventListener("mouseleave", function () {
-    let tl = gsap.timeline();
-    tl.to(".nav-part2 h5 span", {
-      y: 25,
-      stagger: {
-        amount: 0.2,
-      },
-    });
-    tl.to(".nav-part2 h5", {
-      display: "none",
-      duration: 0.1,
-    });
-    tl.to("#nav-bottom", {
-      height: 0,
-      duration: 0.2,
-      padding: "0px",
-    });
-  });
+      let tl = gsap.timeline()
+      tl.to(".nav-part2 h5 span", {
+          y: 25,
+          stagger: {
+              amount: 0.2
+          }
+      })
+      tl.to(".nav-part2 h5", {
+          display: "none",
+          duration: 0.1
+      })
+      tl.to("#nav-bottom", {
+          height: 0,
+          duration: 0.2
+      })
+  })
 }
 
+function page2Animation() {
+  var rightElems = document.querySelectorAll(".right-elem")
 
-function page2Animation(){
-  
-var rightElems = document.querySelectorAll(".right-elem");
-rightElems.forEach(function (elem) {
-  elem.addEventListener("mouseenter", function () {
-    gsap.to(elem.childNodes[3], {
-      opacity: 1,
-      scale: 1,
-    });
-  });
-  elem.addEventListener("mouseleave", function () {
-    gsap.to(elem.childNodes[3], {
-      opacity: 0,
-      scale: 0,
-    });
-  });
-  elem.addEventListener("mousemove", function (dets) {
-    gsap.to(elem.childNodes[3], {
-      x: dets.x - elem.getBoundingClientRect().x - 90,
-      y: dets.y - elem.getBoundingClientRect().y - 215,
-    });
-  });
-});
+  rightElems.forEach(function (elem) {
+      elem.addEventListener("mouseenter", function () {
+
+
+
+
+          gsap.to(elem.childNodes[3], {
+              opacity: 1,
+              scale: 1
+          })
+      })
+      elem.addEventListener("mouseleave", function () {
+          gsap.to(elem.childNodes[3], {
+              opacity: 0,
+              scale: 0
+          })
+      })
+      elem.addEventListener("mousemove", function (dets) {
+
+          gsap.to(elem.childNodes[3], {
+              x: dets.x - elem.getBoundingClientRect().x - 90,
+              y: dets.y - elem.getBoundingClientRect().y - 215
+          })
+      })
+  })
 }
-
-
 
 function page3VideoAnimation() {
   var page3Center = document.querySelector(".page3-center")
@@ -129,7 +154,7 @@ function page3VideoAnimation() {
   })
 
 
-  var sections = document.querySelectorAll(".section-right")
+  var sections = document.querySelectorAll(".sec-right")
 
   sections.forEach(function (elem) {
       elem.addEventListener("mouseenter", function () {
@@ -144,7 +169,29 @@ function page3VideoAnimation() {
 
 }
 
+function page6Animations() {
+  gsap.from("#btm6-part2 h4", {
+      x: 0,
+      duration: 1,
+      scrollTrigger: {
+          trigger: "#btm6-part2",
+          scroller: "#main",
+          // markers:true,
+          start: "top 80%",
+          end: "top 10%",
+          scrub: true
+      }
+  })
+}
+
 locomotiveAnimation()
+
 navAnimation()
-page2Animation() 
-page3VideoAnimation() 
+
+page2Animation()
+
+page3VideoAnimation()
+
+page6Animations()
+
+loadingAnimation()

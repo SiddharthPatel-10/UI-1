@@ -17,7 +17,6 @@ body {
   user-select: none;
 }
 
-
 nav {
   position: fixed;
   display: flex;
@@ -105,15 +104,22 @@ nav h4:hover {
 
 #page1 h1 {
   font-size: 8.5vw;
+  font-size: 9vw;
   line-height: 8.5vw;
   font-weight: 900;
   text-transform: uppercase;
 }
+
 #page1 h1 svg {
-  width: 6vw;
-  height: 6vw;
+  width: 6.4vw;
+  height: 6.4vw;
   border-radius: 50%;
   background-color: #0ba34e;
+  transition: transform 0.3s ease;
+}
+
+#page1 h1 svg:hover {
+  transform: rotate(-28deg) scale(0.84);
 }
 
 #page1 p {
@@ -251,8 +257,6 @@ nav h4:hover {
   opacity: 0;
   position: absolute;
   scale: 0;
-}
-#page2 #last-right-elem {
 }
 
 #page3 {
@@ -394,7 +398,7 @@ nav h4:hover {
   flex-wrap: wrap;
 }
 .box {
-  background-color: rgb(245, 245, 245);
+  background-color: #F5F5F5;
   min-width: 32.4%;
   height: 44vh;
   padding-left: 1.5vw;
@@ -440,10 +444,8 @@ nav h4:hover {
 }
 
 #page6 #container {
-
   padding-left: 32vw;
   padding-right: 6vw;
-
 }
 
 #page7 {
@@ -454,8 +456,6 @@ nav h4:hover {
 }
 
 .section {
-  
-
   width: 100%;
   height: 85vh;
   display: flex;
@@ -486,7 +486,6 @@ nav h4:hover {
 .section-right {
   width: 70%;
   height: 100%;
-  background-color: purple;
   position: relative;
 }
 
@@ -593,7 +592,7 @@ nav h4:hover {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  
+
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
   padding-top: 3vh;
   padding-bottom: 10vh;
@@ -675,22 +674,22 @@ summary::marker {
   padding-bottom: 30vh;
 }
 
-#page9 .page9-top{
+#page9 .page9-top {
   padding: 6.36vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-#page9 .page9-top p{
+#page9 .page9-top p {
   max-width: 72.6%;
   font-size: 2.2vw;
   margin-top: 3.6vw;
   line-height: 1.2;
 }
-#page9 .page10-top h4{
+#page9 .page10-top h4 {
   font-weight: 400;
-  font-size: .92vw;
+  font-size: 0.92vw;
 }
 #page9 .container {
   display: flex;
@@ -701,15 +700,15 @@ summary::marker {
 }
 
 #page9 .box {
-  background-color: #57565633;
+  background-color: #1F1F1F;
   max-width: 32.4%;
   height: 44vh;
   padding-left: 1.5vw;
   margin-bottom: 0.8vw;
   margin-right: 0.8vw;
 }
-#page9 .box .top-box{
-  padding-top: .6vw;
+#page9 .box .top-box {
+  padding-top: 0.6vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -719,15 +718,15 @@ summary::marker {
   margin-right: 1.2vw;
   position: relative;
   /* transition: all cubic-bezier(0.19, 1, 0.22, 6) 0.8s; */
-  transition: all cubic-bezier(0.19, 1, 0.20, 6) 0.34s;
+  transition: all cubic-bezier(0.19, 1, 0.2, 6) 0.34s;
 }
 
 #page9 .box:hover i {
-  padding-right: .26vw;
-  padding-top: .22vw;
+  padding-right: 0.26vw;
+  padding-top: 0.22vw;
 }
 
-#page9 .box:nth-child(5){
+#page9 .box:nth-child(5) {
   padding-left: 1.5vw;
   margin-bottom: 0.8vw;
   margin-right: 0.8vw;
@@ -743,8 +742,7 @@ summary::marker {
   padding-top: 1vw;
 }
 
-
-#page9 .box p{
+#page9 .box p {
   color: #fff;
   font-weight: 500;
   padding-top: 15.6vh;
@@ -803,9 +801,87 @@ summary::marker {
   }
 }
 
-#page10, #page11, #page12{
+#page10,
+#page11{
   background-color: #fff;
   min-height: 100vh;
   width: 100%;
 }
 
+
+#page12 {
+  background-color: #111111;
+  min-height: 100vh;
+  width: 100%;
+}
+
+#page12 h1{
+  line-height: 1;
+  font-size: 6.2vw;
+  padding-inline: 22vw;
+  font-weight: 600;
+  padding-block: 10vw;
+}
+
+.faq-container {
+  background-color: #111111;
+  padding-inline: 6.5vw;
+  padding-bottom: 10vw;
+}
+
+.faq-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 0.5px solid #3b3b3b;
+  padding: 1.8vw 0;
+  cursor: pointer;
+}
+
+.faq-item-left h4 {
+  margin: 0;
+  color: #616161;
+  font-weight: 500;
+  font-size: .9vw;
+}
+
+.faq-item-right {
+  width: 50%;
+  padding-block: 1vw;
+}
+
+.faq-item-right .faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.faq-question{
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+
+.faq-answer {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease;
+}
+
+.faq-answer p {
+  margin: 0;
+  font-size: 1.1vw;
+  padding-top: 2.4vw;
+  padding-bottom: 4.8vw;
+}
+
+.faq-item-right .faq-question i {
+  transition: transform 0.3s ease;
+  margin-left: 4vw;
+}
+
+#page13{
+  background-color: white;
+  min-height: 100vh;
+  width: 100%;
+}

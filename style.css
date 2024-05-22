@@ -881,7 +881,150 @@ summary::marker {
 }
 
 #page13{
-  background-color: white;
-  min-height: 100vh;
+  background-color: #111111;
+  color: white;
+  min-height: 68vh;
   width: 100%;
+  /* border: none; */
+}
+footer {
+  color: #fff;
+  padding: 20px 0;
+  /* background-color: red; */
+  margin: 0 6vw;
+  /* border-top: .5px solid #666666; */
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* padding: 0 6vw; */
+  margin-block: .65vw 4vw;
+}
+
+.footer-left,
+.footer-right {
+  margin: 10px 0;
+}
+
+.footer-left {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.6vw;
+  min-width: 46vw;
+}
+.footer-right {
+  min-width: 26vw;
+  /* border: 1px solid red; */
+}
+.footer-right h2{
+  font-weight: 500;
+  padding-block: .05vw 3.6vw;
+  font-size: 2.4vw;
+  line-height: 1.2;
+}
+.footer-right li{
+  margin-right: 1vw;
+  margin-bottom: .8vw;
+  color: white;
+  text-align: center;
+  list-style: none;
+  font-size: .9vw;
+}
+
+.footer-right-div{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 30vw;
+}
+.footer-column {
+  margin-bottom: 20px;
+  /* flex: 1 1 calc(33.33% - 4.6vw); */
+}
+
+.footer-column h3,
+.footer-right h3 {
+  margin-bottom: 1.6vw;
+  font-size: .9vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #696969;
+}
+
+.footer-column ul,
+.footer-right ul {
+  list-style: none;
+}
+
+.footer-column ul li,
+.footer-right ul li {
+  margin-bottom: .5vw;
+}
+
+.footer-column ul li a,
+.footer-right ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: .9vw;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover, .footer-right li:hover,
+.footer-right ul li a:hover {
+  color: #696969;
+}
+
+.bottom-footer{
+  display: flex;
+  justify-content: space-between;
+  border-top: .5px solid #666666;
+  margin: 0 auto;
+  margin-top: 4vw;
+  padding-top: 1.4vw;
+  font-size: .9vw;
+}
+.bottom-footer-left{
+  max-width: 40vw;
+}
+.bottom-footer-right{
+  display: flex;
+  align-items: center;
+  gap: 16vw;
+}
+
+
+
+@media (max-width: 1280px) {
+  .footer-container{
+    flex-direction: column;
+  }
+}
+/* Tablet view: two columns */
+@media (max-width: 768px) {
+  .footer-column {
+    flex: 1 1 calc(10% - 4.6vw);
+  }
+  .footer-container{
+    flex-direction: column;
+  }
+}
+
+/* Mobile view: one column */
+@media (max-width: 448px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
 }
